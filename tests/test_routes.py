@@ -62,7 +62,7 @@ def test_get_account(self):
 
     def setUp(self):
         """Runs before each test"""
-        db.session.query(Account).delete()  # clean up the last tests
+      db.session.query(Account).delete()  # clean up the last tests
         db.session.commit()
 
         self.client = app.test_client()
